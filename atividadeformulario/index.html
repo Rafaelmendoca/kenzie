@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de cadastro</title>
+  </head>
+
+  <body>
+    <form>
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        placeholder="digite seu nome aqui..."
+        required="true"
+      />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="digite seu e-mail aqui..."
+        required="true"
+      />
+      <br />
+      <label for="descricao">descreva o que te trouxe ate aqui:</label>
+      <br />
+      <textarea
+        name="descricao"
+        placeholder="Nos conte um pouco mais sobre você..."
+        id="descricao"
+        cols="20"
+        rows="10"
+        required
+      ></textarea>
+      <br />
+      <label for="modulo">Selecione um Modulo:</label>
+      <select name="modulo" id="modulo" required>
+        <option value="">modulo</option>
+        <option value="M1">M1</option>
+        <option value="M2">M2</option>
+        <option value="M3">M3</option>
+        <option value="M4">M4</option>
+        <option value="M5">M5</option>
+        <option value="M6">M6</option>
+      </select>
+      <br />
+      <label for="recebernovidades"
+        >Deseja receber as novidades por e-mail?</label
+      >
+      <label for="sim">sim</label>
+      <input type="radio" name="resposta" id="sim" value="sim" required />
+
+      <label for="nao">Não</label>
+      <input type="radio" name="resposta" id="nao" value="nao" required />
+      <br />
+
+      
+      <input type="submit" value="enviar" />
+    </form>
+  </body>
+</html>
